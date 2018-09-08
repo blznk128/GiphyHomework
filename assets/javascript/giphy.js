@@ -1,7 +1,7 @@
 var movies = [];
 function displayMovieInfo() {
   var movie = $(this).attr("data-name");
-  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movie + "&api_key=rtiTwUTbyuQgXn3yIaK5CR8YpVou7RLJ&limit=10";
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movie + "&api_key=rtiTwUTbyuQgXn3yIaK5CR8YpVou7RLJ&limit&=10&rating=pg";
                   
   $.ajax({
     url: queryURL,
