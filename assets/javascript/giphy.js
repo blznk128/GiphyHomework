@@ -12,10 +12,10 @@ function displayMovieInfo() {
       console.log(response);
     for(var i = 0; i<results.length;i++) {
       var rating = "<div class='ratings'> Rating: " + (results[i].rating) + " </div>";
-      var image = rating + '<img src = "' + results[i].images.fixed_height_still.url + '" data-still="' + results[i].images.fixed_height_still.url + '" data-animate="' + results[i].images.fixed_height.url + '" data-state="still" class="animateImage">';
+      var image = rating + '<img src = "' + results[i].images.fixed_height_still.url + '" data-still="' + results[i].images.fixed_height_still.url + '" data-animate="' + results[i].images.fixed_height.url + '" data-state="still" id="animateImage_'+results[i].id+'">';
       $("#movies-view").prepend(image);
 
-    $(".animateImage").on("click", function(){
+    $(`#animateImage_${results[i].id}`).on("click", function(){
       var state = $(this).attr("data-state");
 
       if (state === "still") {
