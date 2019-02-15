@@ -1,2 +1,1 @@
-# GiphyHomework
-I liked how most of the code was given to you in the activities, it was more of figuring out how to rewrite the code together to make it work from them but it was nice to have a reference. Hardest part for me was writing in the proper key words like img-src and data-still. Also the for loop writes all the giphys so it boggled my mind that only some would change to animate and back to still and others nothing happened.
+The user can input anything in the search box and a button for that search term will appear. The user can then click on that button and giphys will appear. They appear first paused, the user can click on them to animate them and click them again to pause them. Jquery is the bread and butter of this application, along with html.
